@@ -32,6 +32,7 @@ type
     edtMedia: TEdit;
     pnlSecao3: TPanel;
     lblResultadoMedia: TLabel;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,5 +45,13 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmAtividade27.FormCreate(Sender: TObject);
+begin
+// Define a largura mínima como 300 pixels
+  Self.Constraints.MinWidth := 358;
+  // Opcional: definir altura mínima
+  Self.Constraints.MinHeight := 640;
+end;
 
 end.

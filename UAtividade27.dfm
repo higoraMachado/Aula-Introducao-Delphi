@@ -2,7 +2,7 @@ object frmAtividade27: TfrmAtividade27
   Left = 0
   Top = 0
   Caption = 'frmAtividade27'
-  ClientHeight = 359
+  ClientHeight = 319
   ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -10,6 +10,7 @@ object frmAtividade27: TfrmAtividade27
   Font.Height = -24
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = FormCreate
   TextHeight = 32
   object pnlSecao1: TPanel
     AlignWithMargins = True
@@ -25,9 +26,6 @@ object frmAtividade27: TfrmAtividade27
     AutoSize = True
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 8
-    ExplicitTop = 8
-    ExplicitWidth = 608
     object lblNome: TLabel
       AlignWithMargins = True
       Left = 3
@@ -56,10 +54,7 @@ object frmAtividade27: TfrmAtividade27
       CharCase = ecUpperCase
       TabOrder = 0
       Text = 'DSA'
-      ExplicitLeft = 88
-      ExplicitTop = 23
-      ExplicitWidth = 376
-      ExplicitHeight = 43
+      ExplicitHeight = 40
     end
     object btnCalculaMedia: TBitBtn
       Left = 475
@@ -182,84 +177,104 @@ object frmAtividade27: TfrmAtividade27
       NumGlyphs = 2
       TabOrder = 1
       WordWrap = True
-      ExplicitLeft = 416
     end
   end
   object pnlSecao2: TPanel
     Left = 0
     Top = 101
     Width = 624
-    Height = 168
+    Height = 160
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitTop = 61
     object pnlSecao2Label: TPanel
       Left = 0
       Top = 0
       Width = 624
-      Height = 48
+      Height = 35
       Align = alTop
       AutoSize = True
       BevelOuter = bvNone
       TabOrder = 0
       object lblN1: TLabel
         Left = 0
-        Top = 3
-        Width = 120
-        Height = 45
-        Alignment = taCenter
-        Caption = 'Nota 1'
-        Layout = tlCenter
-      end
-      object lblN2: TLabel
-        Left = 117
         Top = 0
         Width = 120
-        Height = 45
+        Height = 35
+        Align = alLeft
         Alignment = taCenter
+        AutoSize = False
+        Caption = 'Nota 1'
+        Layout = tlCenter
+        ExplicitTop = 3
+        ExplicitHeight = 32
+      end
+      object lblN2: TLabel
+        Left = 120
+        Top = 0
+        Width = 120
+        Height = 35
+        Align = alLeft
+        Alignment = taCenter
+        AutoSize = False
         Caption = 'Nota 2'
         Layout = tlCenter
+        ExplicitLeft = 117
+        ExplicitHeight = 32
       end
       object lblN3: TLabel
         Left = 240
-        Top = 3
+        Top = 0
         Width = 120
-        Height = 45
+        Height = 35
+        Align = alLeft
         Alignment = taCenter
+        AutoSize = False
         Caption = 'Nota 3'
         Layout = tlCenter
+        ExplicitTop = 3
+        ExplicitHeight = 32
       end
       object lblN4: TLabel
-        Left = 340
-        Top = 3
+        Left = 360
+        Top = 0
         Width = 120
-        Height = 45
+        Height = 35
+        Align = alLeft
         Alignment = taCenter
+        AutoSize = False
         Caption = 'Nota 4'
         Layout = tlCenter
+        ExplicitLeft = 340
+        ExplicitTop = 3
+        ExplicitHeight = 32
       end
       object lblMedia: TLabel
-        Left = 460
-        Top = 3
+        Left = 480
+        Top = 0
         Width = 120
-        Height = 45
+        Height = 35
+        Align = alLeft
         Alignment = taCenter
+        AutoSize = False
         Caption = 'M'#233'dia'
         Layout = tlCenter
+        ExplicitLeft = 460
+        ExplicitTop = 3
+        ExplicitHeight = 32
       end
     end
     object pnlSecao2Edit: TPanel
       Left = 0
-      Top = 48
+      Top = 35
       Width = 624
       Height = 73
       Align = alTop
       AutoSize = True
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitTop = 71
-      ExplicitWidth = 600
       object pnlSecao2Edtn1: TPanel
         Left = 0
         Top = 0
@@ -268,9 +283,6 @@ object frmAtividade27: TfrmAtividade27
         Align = alLeft
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 12
-        ExplicitTop = 8
-        ExplicitHeight = 57
         object edtN1: TEdit
           AlignWithMargins = True
           Left = 20
@@ -285,9 +297,6 @@ object frmAtividade27: TfrmAtividade27
           Alignment = taCenter
           NumbersOnly = True
           TabOrder = 0
-          ExplicitLeft = 21
-          ExplicitTop = 14
-          ExplicitWidth = 78
           ExplicitHeight = 40
         end
       end
@@ -299,9 +308,6 @@ object frmAtividade27: TfrmAtividade27
         Align = alLeft
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitLeft = 111
-        ExplicitTop = 8
-        ExplicitHeight = 57
         object edtN2: TEdit
           AlignWithMargins = True
           Left = 20
@@ -316,9 +322,6 @@ object frmAtividade27: TfrmAtividade27
           Alignment = taCenter
           NumbersOnly = True
           TabOrder = 0
-          ExplicitLeft = 21
-          ExplicitTop = 14
-          ExplicitWidth = 78
           ExplicitHeight = 40
         end
       end
@@ -330,8 +333,6 @@ object frmAtividade27: TfrmAtividade27
         Align = alLeft
         BevelOuter = bvNone
         TabOrder = 2
-        ExplicitLeft = 246
-        ExplicitTop = -68
         object edtN3: TEdit
           AlignWithMargins = True
           Left = 20
@@ -346,9 +347,6 @@ object frmAtividade27: TfrmAtividade27
           Alignment = taCenter
           NumbersOnly = True
           TabOrder = 0
-          ExplicitLeft = 21
-          ExplicitTop = 14
-          ExplicitWidth = 78
           ExplicitHeight = 40
         end
       end
@@ -360,9 +358,6 @@ object frmAtividade27: TfrmAtividade27
         Align = alLeft
         BevelOuter = bvNone
         TabOrder = 3
-        ExplicitLeft = 340
-        ExplicitTop = 8
-        ExplicitHeight = 57
         object edtN4: TEdit
           AlignWithMargins = True
           Left = 20
@@ -377,9 +372,6 @@ object frmAtividade27: TfrmAtividade27
           Alignment = taCenter
           NumbersOnly = True
           TabOrder = 0
-          ExplicitLeft = 21
-          ExplicitTop = 14
-          ExplicitWidth = 78
           ExplicitHeight = 40
         end
       end
@@ -392,9 +384,6 @@ object frmAtividade27: TfrmAtividade27
         BevelOuter = bvNone
         Caption = 'Panel5'
         TabOrder = 4
-        ExplicitLeft = 460
-        ExplicitTop = 8
-        ExplicitHeight = 57
         object edtMedia: TEdit
           AlignWithMargins = True
           Left = 20
@@ -409,9 +398,6 @@ object frmAtividade27: TfrmAtividade27
           Alignment = taCenter
           NumbersOnly = True
           TabOrder = 0
-          ExplicitLeft = 21
-          ExplicitTop = 14
-          ExplicitWidth = 78
           ExplicitHeight = 40
         end
       end
@@ -419,27 +405,25 @@ object frmAtividade27: TfrmAtividade27
   end
   object pnlSecao3: TPanel
     Left = 0
-    Top = 269
+    Top = 261
     Width = 624
-    Height = 90
+    Height = 58
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = 8
-    ExplicitTop = 255
-    ExplicitWidth = 608
+    ExplicitTop = 207
     object lblResultadoMedia: TLabel
       AlignWithMargins = True
       Left = 3
       Top = 3
       Width = 618
-      Height = 84
+      Height = 52
       Align = alClient
       Alignment = taCenter
       Layout = tlCenter
       WordWrap = True
-      ExplicitWidth = 7
-      ExplicitHeight = 32
+      ExplicitTop = 6
+      ExplicitHeight = 49
     end
   end
 end
